@@ -30,7 +30,7 @@ function TipForm() {
           25%
         </FormRadio>
         <input
-          className="w-28 rounded-md bg-VeryLightGrayishCyan p-2 text-center text-2xl text-darkGrayishCyan"
+          className="w-28 rounded-md border-2 border-VeryLightGrayishCyan bg-VeryLightGrayishCyan text-center text-2xl text-veryDarkCyan focus:border-2 focus:border-strongCyan focus:outline-none"
           type="text"
           placeholder="Custom"
         />
@@ -48,7 +48,7 @@ function FormInput() {
         Bill
       </label>
       <input
-        className="rounded-md bg-VeryLightGrayishCyan p-2 text-2xl "
+        className="rounded-md border-2 border-VeryLightGrayishCyan bg-VeryLightGrayishCyan p-2 text-right text-2xl text-veryDarkCyan focus:border-2 focus:border-strongCyan focus:outline-none"
         type="text"
         id="bill"
         placeholder="0"
@@ -68,7 +68,7 @@ function FormRadio({ id, value, peer, children }) {
         value={value}
       />
       <label
-        className={`h-full w-full cursor-pointer rounded-md bg-veryDarkCyan py-2 text-center text-2xl text-white peer-checked/${peer}:bg-strongCyan`}
+        className={`h-full w-full cursor-pointer rounded-md bg-veryDarkCyan py-2 text-center text-2xl text-white peer-checked/${peer}:bg-strongCyan hover:bg-lightGrayishCyan hover:text-veryDarkCyan`}
         htmlFor={id}
       >
         {children}
@@ -84,7 +84,7 @@ function TipDisplay() {
         <DisplayText>Tip Amount</DisplayText>
         <DisplayText>Total</DisplayText>
       </div>
-      <button className="mb-2 rounded-md bg-strongCyan py-2 text-2xl text-veryDarkCyan">
+      <button className="mb-2 rounded-md bg-strongCyan py-2 text-2xl text-veryDarkCyan hover:bg-lightGrayishCyan">
         RESET
       </button>
     </section>
