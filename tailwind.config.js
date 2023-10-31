@@ -5,6 +5,7 @@ module.exports = {
       center: true,
     },
     colors: {
+      white: "hsl(0, 0%, 100%)",
       strongCyan: "hsl(172, 67%, 45%)",
       veryDarkCyan: "hsl(183, 100%, 15%)",
       darkGrayishCyan: "hsl(186, 14%, 43%)",
