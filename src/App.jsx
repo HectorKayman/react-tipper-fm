@@ -1,6 +1,6 @@
 export default function App() {
   return (
-    <div className="rounded-3xl bg-white p-10 font-mono font-bold">
+    <div className="flex gap-10 rounded-3xl bg-white p-8 font-mono font-bold">
       <TipForm />
       <TipDisplay />
     </div>
@@ -9,7 +9,7 @@ export default function App() {
 
 function TipForm() {
   return (
-    <form className="flex flex-col gap-10">
+    <form className="flex flex-col gap-10 py-3">
       <FormInput />
 
       <fieldset className="grid grid-cols-3 gap-3">
@@ -73,5 +73,29 @@ function FormRadio({ id, value, peer, children }) {
 }
 
 function TipDisplay() {
-  return <div></div>;
+  return (
+    <section className="flex flex-col gap-40 rounded-2xl bg-veryDarkCyan p-8">
+      <div className="grid gap-10">
+        <DisplayText>Tip Amount</DisplayText>
+        <DisplayText>Total</DisplayText>
+      </div>
+      <button className="mb-2 rounded-md bg-strongCyan py-2 text-2xl">
+        RESET
+      </button>
+    </section>
+  );
+}
+
+function DisplayText({ children }) {
+  return (
+    <div className="flex justify-between gap-24">
+      <div>
+        <legend className="text-white">{children}</legend>
+        <legend className="text-grayishCyan">/ person</legend>
+      </div>
+      <div>
+        <h3 className="text-5xl text-strongCyan">$0.00</h3>
+      </div>
+    </div>
+  );
 }
