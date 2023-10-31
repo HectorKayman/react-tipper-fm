@@ -29,6 +29,11 @@ function TipForm() {
         <FormRadio id="tip-25" value="25" peer="twentyFive">
           25%
         </FormRadio>
+        <input
+          className="w-28 rounded-md bg-VeryLightGrayishCyan p-2 text-center text-2xl text-darkGrayishCyan"
+          type="text"
+          placeholder="Custom"
+        />
       </fieldset>
 
       <FormInput />
@@ -79,7 +84,7 @@ function TipDisplay() {
         <DisplayText>Tip Amount</DisplayText>
         <DisplayText>Total</DisplayText>
       </div>
-      <button className="mb-2 rounded-md bg-strongCyan py-2 text-2xl">
+      <button className="mb-2 rounded-md bg-strongCyan py-2 text-2xl text-veryDarkCyan">
         RESET
       </button>
     </section>
