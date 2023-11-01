@@ -8,7 +8,7 @@ export function TipForm() {
     <form className="flex flex-col gap-10 py-3">
       <FormInput logo={Dollar}>Bill</FormInput>
 
-      <fieldset className="grid grid-cols-3 gap-3">
+      <fieldset className="grid grid-cols-2 gap-3 small:grid-cols-3">
         <legend className="mb-2 text-darkGrayishCyan">Select Tip %</legend>
         <FormRadio id="tip-5" value="5" peer="five">
           5%
@@ -26,7 +26,7 @@ export function TipForm() {
           25%
         </FormRadio>
         <input
-          className="w-28 rounded-md border-2 border-VeryLightGrayishCyan bg-VeryLightGrayishCyan text-center text-2xl text-veryDarkCyan focus:border-2 focus:border-strongCyan focus:outline-none"
+          className="rounded-md border-2 border-VeryLightGrayishCyan bg-VeryLightGrayishCyan text-center text-2xl text-veryDarkCyan focus:border-2 focus:border-strongCyan focus:outline-none small:w-28"
           type="text"
           placeholder="Custom"
         />

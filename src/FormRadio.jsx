@@ -1,6 +1,6 @@
 export function FormRadio({ id, value, children }) {
   return (
-    <div className="flex h-12 w-28 items-center justify-center">
+    <div className="flex h-12 items-center justify-center small:w-28">
       <input
         className="peer/tip hidden"
         type="radio"

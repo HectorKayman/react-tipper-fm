@@ -2,7 +2,7 @@ import { DisplayText } from "./DisplayText";
 
 export function TipDisplay() {
   return (
-    <section className="flex flex-col gap-40 rounded-2xl bg-veryDarkCyan p-8">
+    <section className="flex flex-col gap-10 rounded-2xl bg-veryDarkCyan p-8 mid:gap-40">
       <div className="grid gap-10">
         <DisplayText>Tip Amount</DisplayText>
         <DisplayText>Total</DisplayText>

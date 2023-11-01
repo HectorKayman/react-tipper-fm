@@ -1,7 +1,7 @@
 export function DisplayText({ children }) {
   return (
     <div
-      className="flex justify-between gap-32
+      className="flex justify-between small:gap-20 mid:gap-32
     "
     >
       <div>
@@ -9,7 +9,7 @@ export function DisplayText({ children }) {
         <legend className="text-grayishCyan">/ person</legend>
       </div>
       <div>
-        <h3 className="text-5xl text-strongCyan">$0.00</h3>
+        <h3 className="text-4xl text-strongCyan small:text-5xl">$0.00</h3>
       </div>
     </div>
   );
