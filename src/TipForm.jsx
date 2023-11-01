@@ -44,8 +44,8 @@ export function TipForm({
           25%
         </FormRadio>
         <input
-          className="rounded-md border-2 border-VeryLightGrayishCyan bg-VeryLightGrayishCyan text-center text-2xl text-veryDarkCyan focus:border-2 focus:border-strongCyan focus:outline-none small:w-28"
-          type="text"
+          className="rounded-md border-2 border-VeryLightGrayishCyan bg-VeryLightGrayishCyan text-center text-2xl text-veryDarkCyan [appearance:textfield] focus:border-2 focus:border-strongCyan focus:outline-none small:w-28 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+          type="number"
           placeholder="Custom"
         />
       </fieldset>
