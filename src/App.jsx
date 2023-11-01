@@ -8,16 +8,16 @@ export default function App() {
   const [tipPercent, setTip] = useState(null);
 
   function handleBillChange(e) {
-    setTotalBill(e.target.value);
+    setTotalBill(Number(e.target.value));
   }
 
   function handlePeopleChange(e) {
-    setPeople(e.target.value);
+    setPeople(Number(e.target.value));
   }
 
   function handleTip(e) {
-    setTip(e.target.value);
-    console.log(e.target.value);
+    setTip(Number(e.target.value));
+    console.log(Number(e.target.value));
   }
 
   return (
