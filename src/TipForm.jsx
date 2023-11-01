@@ -10,9 +10,15 @@ export function TipForm({
   handleBillChange,
   handlePeopleChange,
   handleTip,
+  onCalculateBill,
 }) {
+  function handleSubmit(e) {
+    e.preventDefault();
+    onCalculateBill();
+  }
+
   return (
-    <form className="flex flex-col gap-10 py-3">
+    <form className="flex flex-col gap-10 py-3" onSubmit={handleSubmit}>
       <FormInput
         id="bill"
         value={totalBill}
@@ -58,6 +64,7 @@ export function TipForm({
       >
         Number of People
       </FormInput>
+      <button className="hidden" type="submit"></button>
     </form>
   );
 }
