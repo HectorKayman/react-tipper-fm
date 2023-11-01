@@ -1,6 +1,10 @@
 module.exports = {
   content: ["index.html", "./src/**/*.{js,jsx,ts,tsx,vue,html}"],
   theme: {
+    screens: {
+      mid: "899px",
+      small: "429px",
+    },
     container: {
       center: true,
     },
