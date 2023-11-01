@@ -15,8 +15,8 @@ export default function App() {
     } else {
       const totalTip = (totalBill * tipPercent) / 100;
       const totalAmount = totalBill + totalTip;
-      setTipPerPerson(totalTip / people);
-      setBillPerPerson(totalAmount / people);
+      setTipPerPerson(Number.parseFloat(totalTip / people).toFixed(2));
+      setBillPerPerson(Number.parseFloat(totalAmount / people).toFixed(2));
     }
   }
 
