@@ -1,7 +1,7 @@
 import { FormInput } from "./FormInput";
 import { FormRadio } from "./FormRadio";
-import Dollar from "./images/icon-dollar.svg";
-import People from "./images/icon-person.svg";
+import DollarLogo from "./images/icon-dollar.svg";
+import PeopleLogo from "./images/icon-person.svg";
 
 export function TipForm({
   totalBill,
@@ -16,7 +16,7 @@ export function TipForm({
       <FormInput
         id="bill"
         value={totalBill}
-        logo={Dollar}
+        logo={DollarLogo}
         onInputChange={handleBillChange}
       >
         Bill
@@ -53,7 +53,7 @@ export function TipForm({
       <FormInput
         id="people"
         value={people}
-        logo={People}
+        logo={PeopleLogo}
         onInputChange={handlePeopleChange}
       >
         Number of People
