@@ -7,7 +7,7 @@ export function TipDisplay() {
         <DisplayText>Tip Amount</DisplayText>
         <DisplayText>Total</DisplayText>
       </div>
-      <button className="mb-2 rounded-md bg-strongCyan py-2 text-2xl text-veryDarkCyan hover:bg-lightGrayishCyan">
+      <button className="mb-2 rounded-md bg-strongCyan py-2 text-2xl text-veryDarkCyan hover:bg-lightGrayishCyan  active:bg-opacity-80">
         RESET
       </button>
     </section>
