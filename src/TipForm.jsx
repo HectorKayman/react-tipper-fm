@@ -6,7 +6,7 @@ import People from "./images/icon-person.svg";
 export function TipForm({
   totalBill,
   people,
-  tip,
+  tipPercent,
   handleBillChange,
   handlePeopleChange,
   handleTip,
@@ -24,7 +24,7 @@ export function TipForm({
 
       <fieldset
         className="grid grid-cols-2 gap-3 small:grid-cols-3"
-        value={tip}
+        value={tipPercent}
         onChange={handleTip}
       >
         <legend className="mb-2 text-darkGrayishCyan">Select Tip %</legend>

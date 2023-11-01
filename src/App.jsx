@@ -5,7 +5,7 @@ import { TipForm } from "./TipForm";
 export default function App() {
   const [totalBill, setTotalBill] = useState("");
   const [people, setPeople] = useState("");
-  const [tip, setTip] = useState(null);
+  const [tipPercent, setTip] = useState(null);
 
   function handleBillChange(e) {
     setTotalBill(e.target.value);
@@ -25,7 +25,7 @@ export default function App() {
       <TipForm
         totalBill={totalBill}
         people={people}
-        tip={tip}
+        tip={tipPercent}
         handleBillChange={handleBillChange}
         handlePeopleChange={handlePeopleChange}
         handleTip={handleTip}
