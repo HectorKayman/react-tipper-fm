@@ -7,6 +7,7 @@ import People from "./images/icon-person.svg";
 export function TipForm() {
   const [bill, setBill] = useState("");
   const [people, setPeople] = useState("");
+  const [tip, setTip] = useState(null);
 
   function handleBillChange(e) {
     setBill(e.target.value);
@@ -14,6 +15,11 @@ export function TipForm() {
 
   function handlePeopleChange(e) {
     setPeople(e.target.value);
+  }
+
+  function handleTip(e) {
+    setTip(e.target.value);
+    console.log(e.target.value);
   }
 
   return (
@@ -27,7 +33,11 @@ export function TipForm() {
         Bill
       </FormInput>
 
-      <fieldset className="grid grid-cols-2 gap-3 small:grid-cols-3">
+      <fieldset
+        className="grid grid-cols-2 gap-3 small:grid-cols-3"
+        value={tip}
+        onChange={handleTip}
+      >
         <legend className="mb-2 text-darkGrayishCyan">Select Tip %</legend>
         <FormRadio id="tip-5" value="5" peer="five">
           5%
