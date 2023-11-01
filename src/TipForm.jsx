@@ -4,7 +4,7 @@ import Dollar from "./images/icon-dollar.svg";
 import People from "./images/icon-person.svg";
 
 export function TipForm({
-  bill,
+  totalBill,
   people,
   tip,
   handleBillChange,
@@ -15,7 +15,7 @@ export function TipForm({
     <form className="flex flex-col gap-10 py-3">
       <FormInput
         id="bill"
-        value={bill}
+        value={totalBill}
         logo={Dollar}
         onInputChange={handleBillChange}
       >

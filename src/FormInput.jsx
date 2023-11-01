@@ -9,8 +9,8 @@ export function FormInput({ id, value, logo, onInputChange, children }) {
           <img className="sm:text-sm text-darkGrayishCyan" src={logo} alt="" />
         </div>
         <input
-          className="w-full rounded-md border-2 border-VeryLightGrayishCyan bg-VeryLightGrayishCyan p-2 text-right text-2xl text-veryDarkCyan focus:border-2 focus:border-strongCyan focus:outline-none"
-          type="text"
+          className="w-full rounded-md border-2 border-VeryLightGrayishCyan bg-VeryLightGrayishCyan p-2 text-right text-2xl text-veryDarkCyan [appearance:textfield] focus:border-2 focus:border-strongCyan focus:outline-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+          type="number"
           id={id}
           placeholder="0"
           value={value}
