@@ -1,27 +1,16 @@
-import { useState } from "react";
 import { FormInput } from "./FormInput";
 import { FormRadio } from "./FormRadio";
 import Dollar from "./images/icon-dollar.svg";
 import People from "./images/icon-person.svg";
 
-export function TipForm() {
-  const [bill, setBill] = useState("");
-  const [people, setPeople] = useState("");
-  const [tip, setTip] = useState(null);
-
-  function handleBillChange(e) {
-    setBill(e.target.value);
-  }
-
-  function handlePeopleChange(e) {
-    setPeople(e.target.value);
-  }
-
-  function handleTip(e) {
-    setTip(e.target.value);
-    console.log(e.target.value);
-  }
-
+export function TipForm({
+  bill,
+  people,
+  tip,
+  handleBillChange,
+  handlePeopleChange,
+  handleTip,
+}) {
   return (
     <form className="flex flex-col gap-10 py-3">
       <FormInput
