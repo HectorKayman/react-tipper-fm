@@ -1,12 +1,31 @@
+import { useState } from "react";
 import { FormInput } from "./FormInput";
 import { FormRadio } from "./FormRadio";
 import Dollar from "./images/icon-dollar.svg";
 import People from "./images/icon-person.svg";
 
 export function TipForm() {
+  const [bill, setBill] = useState("");
+  const [people, setPeople] = useState("");
+
+  function handleBillChange(e) {
+    setBill(e.target.value);
+  }
+
+  function handlePeopleChange(e) {
+    setPeople(e.target.value);
+  }
+
   return (
     <form className="flex flex-col gap-10 py-3">
-      <FormInput logo={Dollar}>Bill</FormInput>
+      <FormInput
+        id="bill"
+        value={bill}
+        logo={Dollar}
+        onInputChange={handleBillChange}
+      >
+        Bill
+      </FormInput>
 
       <fieldset className="grid grid-cols-2 gap-3 small:grid-cols-3">
         <legend className="mb-2 text-darkGrayishCyan">Select Tip %</legend>
@@ -32,7 +51,14 @@ export function TipForm() {
         />
       </fieldset>
 
-      <FormInput logo={People}>Number of People</FormInput>
+      <FormInput
+        id="people"
+        value={people}
+        logo={People}
+        onInputChange={handlePeopleChange}
+      >
+        Number of People
+      </FormInput>
     </form>
   );
 }
