@@ -13,16 +13,16 @@ export function TipForm() {
         <FormRadio id="tip-5" value="5" peer="five">
           5%
         </FormRadio>
-        <FormRadio id="tip-10" value="10" peer="ten">
+        <FormRadio id="tip-10" value="10">
           10%
         </FormRadio>
-        <FormRadio id="tip-15" value="15" peer="fifteen">
+        <FormRadio id="tip-15" value="15">
           15%
         </FormRadio>
-        <FormRadio id="tip-20" value="20" peer="twenty">
+        <FormRadio id="tip-20" value="20">
           20%
         </FormRadio>
-        <FormRadio id="tip-25" value="25" peer="twentyFive">
+        <FormRadio id="tip-25" value="25">
           25%
         </FormRadio>
         <input
