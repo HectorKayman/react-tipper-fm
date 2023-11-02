@@ -1,6 +1,6 @@
 export function DisplayText({ children, amount }) {
   return (
-    <div className="flex justify-between small:gap-20 mid:gap-32">
+    <div className="flex justify-between">
       <div>
         <legend className="text-white">{children}</legend>
         <legend className="text-grayishCyan">/ person</legend>

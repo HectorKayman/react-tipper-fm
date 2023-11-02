@@ -3,7 +3,7 @@ import { DisplayText } from "./DisplayText";
 export function TipDisplay({ tipPerPerson, billPerPerson, onReset }) {
   return (
     <section className="flex flex-col gap-10 rounded-2xl bg-veryDarkCyan p-8 mid:gap-40">
-      <div className="grid gap-10">
+      <div className="grid gap-10 mid:w-96">
         <DisplayText amount={tipPerPerson}>Tip Amount</DisplayText>
         <DisplayText amount={billPerPerson}>Total</DisplayText>
       </div>
